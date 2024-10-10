@@ -1,14 +1,21 @@
 # OutlineCleaner
 
 
-### how to run
+## how use
 
 install python tk if not installed:
-`brew install python-tk`
+```shell
+brew install python-tk
+```
 
 run the app:
-`python3 replacerApp.py`
+```shell
+python3 replacerApp.py
+```
+Once the app is running, copy text to the top box and hit the replace button. The text will be formatted into the bottom one.
 
-### notes:
+You can then either copy the text out of the bottom box or copy to clipboard with the other button!
+
+## notes:
 
 - The copy copies the bottom text box
