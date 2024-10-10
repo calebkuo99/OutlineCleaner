@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import scrolledtext
 import re
 
-def process_text(text):
+def process_text_helper(text):
     # Replace all newline characters with a space
     text = text.replace('\n', ' ')
     
@@ -27,12 +27,11 @@ def process_text(text):
     return text
 
 # Function to replace newlines with spaces
-def replace_newlines():
+def process_text():
     # Get the content from the input text box
     input_text = text_box.get("1.0", tk.END)
-    # Replace all newlines with spaces
-    # modified_text = input_text.replace("\n", " ").strip()
-    modified_text = process_text(input_text)
+
+    modified_text = process_text_helper(input_text)
     # Clear the output text box and insert the modified text
     output_box.delete("1.0", tk.END)
     output_box.insert(tk.END, modified_text)
@@ -63,7 +62,7 @@ button_frame = tk.Frame(root)
 button_frame.pack(pady=10)
 
 # Create a button to trigger the newline replacement
-replace_button = tk.Button(button_frame, text="Replace Newlines with Spaces", command=replace_newlines)
+replace_button = tk.Button(button_frame, text="Replace Newlines with Spaces", command=process_text)
 replace_button.pack(side=tk.LEFT, padx=5)
 
 # Create a button to copy output text to clipboard
