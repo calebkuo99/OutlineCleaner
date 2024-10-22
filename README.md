@@ -1,7 +1,8 @@
 # OutlineCleaner
 
 replacerApp gives a ui for cleaning OCR copied text from scanned outlines for easy of use.
-<img width="961" alt="image" src="https://github.com/user-attachments/assets/86b799df-0893-4635-bbe2-27f0a55f0f32">
+<img width="1706" alt="image" src="https://github.com/user-attachments/assets/53d8c951-d077-43c7-b527-f0850e393b87">
+
 
 
 
